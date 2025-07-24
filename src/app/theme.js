@@ -3,49 +3,56 @@ import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 let theme = createTheme({
   palette: {
-    mode: "light", // or 'dark'
+    mode: "light",
     primary: {
-      main: "#1976d2", // Customize your primary color
+      main: "#272d4b",
     },
     secondary: {
-      main: "#dc004e", // Customize your secondary color
+      main: "#ff6b00",
     },
-    background: {
-      default: "#f5f5f5",
-    },
+    paragraphColor: { main: "#7b7d87" },
   },
   typography: {
-    fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+    fontFamily: "'Inter', 'Helvetica', 'Arial', sans-serif, 'Caveat'",
+    //  fontFamily: "'Caveat', 'Helvetica', 'Arial', sans-serif",
     h1: {
-      fontSize: "65px",
+      fontSize: "72px",
       fontWeight: 700,
-      textAlign: "center",
     },
     h2: {
-      fontSize: "2.25rem",
-      fontWeight: 600,
+      fontSize: "48px",
+      fontWeight: 700,
     },
     h3: {
-      fontSize: "1.75rem",
-      fontWeight: 600,
+      fontSize: "35px",
+      fontWeight: 700,
     },
     h4: {
-      fontSize: "1.5rem",
-      fontWeight: 500,
+      fontSize: "28px",
+      fontWeight: 600,
     },
     h5: {
-      fontSize: "1.25rem",
-      fontWeight: 500,
+      fontSize: "18px",
+      fontWeight: 600,
     },
     h6: {
-      fontSize: "1rem",
-      fontWeight: 500,
+      fontSize: "14px",
+      fontWeight: 600,
     },
     body1: {
       fontSize: "1rem",
     },
     body2: {
       fontSize: "0.875rem",
+    },
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 768,
+      md: 1024,
+      lg: 1440,
+      xl: 1920,
     },
   },
 });
